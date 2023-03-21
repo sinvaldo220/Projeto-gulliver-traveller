@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root {
+    --color-light: #ffffff;
+    --color-orange: #5277EB;
+    --color-blue: rgb(12, 7, 39);
+    --border-radius: 5px;
+    --transitiom: .5s;
+    --gradiente-start: rgba(4, 9, 30, .3);
+    --gradiente-end: rgba(4, 9, 30, 9);
+
+}
+/*Formatações genéricas*/
+body{
+    font-family: 'Italiana', serif;
+}
+
+ul {
+    list-style: none;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    transition: var(--transitiom);
+}
+
+a:hover{
+    color:#6BBCFF;
+}
+
+.header-page{
+    width: 100%;
+    height: 100px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center; /*alinha items ao meio*/
+    justify-content: space-around;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.header-menu ul{
+    display: flex;
+    align-items: center
+}
+
+.header-menu li{
+    margin-left: 20px;    
+}
+
+.active-scroll {
+    opacity: 0.9;
+    background-color: black;
+    
+}
+
+.hero{
+    width: 100%;
+    background-image: linear-gradient(var(--gradiente-start), var(--gradiente-end)), url(../img/home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-light);
+    
+}
+.hero h2{
+    font-size: 9vmin;
+    margin: 30px 0;
+}
+
+.hero p{
+    width: 50%;
+    margin: 20px
+}
+
+.btn{
+    background-color: var(--color-orange);
+    border: 2px solid var(--color-orange);
+    padding: 8px 35px;
+    border-radius: var(--border-radius);
+    transition: var(--transitiom);
+}
+
+.btn:hover{
+    background-color: transparent;
+}
+
+li button{
+    color:white
+}
+
+li button:hover{
+    transform: scale(1.0);
+}
+
+.header-title{
+    color: var(--color-light);
+    font: 32px;
+}
+
+span{
+    background-color: var(--color-orange);
+    border-radius: var(--border-radius);
+    padding: 5px;
+}
+
+/* ofertas */
+.ajuda {
+    width: 90%;
+    margin: auto;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.ajuda-itens div {
+    width: 30%;
+  text-align: center;
+  align-items: center;
+  border-radius: var(--border-radius);
+  height: 590px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.ajuda-itens{
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    
+}
+
+.ajuda h2{
+    text-align: center;
+    font-size: 6vmin;
+}
+
+div #meio{
+    background-image: linear-gradient(var(--gradiente-start), var(--gradiente-end)), url(../img/china.jpg);
+    
+}
+
+div #esquerda{
+    background-image: linear-gradient(var(--gradiente-start), var(--gradiente-end)), url(../img/portugal.jpg);
+}
+
+div #direito{
+    background-image: linear-gradient(var(--gradiente-start), var(--gradiente-end)), url(../img/japao.jpg);
+}
+
+/* checkin */
+
+.checkin {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(var(--gradiente-start), var(--gradiente-end)), url(../img/turista.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+
+  
+}
+
+.checkin-content {
+    width: 60%;
+    padding: 50px;
+    color: var(--color-light);
+}
+
+.checkin-content h2{
+    font-size: 7vmin;
+}
+
+.checkin-content p{
+    font-weight: 600px;
+    margin: 20px;
+    line-height: 32px;
+}
+
+
+.ofertas{
+    width: 90%;
+    min-height: 100vh;
+    border: solid 1 px black;
+    margin: 50px auto;
+}
+
+.ofertas-title {
+    margin: 30px;
+    text-align: center;
+    font-size: vmin6;
+}
+
+.ofertas-list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.ofertas-item{
+    width: 28%;
+    margin: 30px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 1px 1px 30px #ccc;
+    border-radius: var(--border-radius);
+    transitiom: var(--transition);
+}
+
+.ofertas-item img{
+    width: 90%;
+    border-radius: var(--border-radius);
+}
+
+.ofertas-item h3{
+    margin: 20px 0;
+    font-weight: 800;
+}
+
+.ofertas-item:hover{
+    transform: scale(1.1);
+}
+
+.ofertas-item p{
+    margin-bottom: 30px;
+    width: 80%;
+}
+
